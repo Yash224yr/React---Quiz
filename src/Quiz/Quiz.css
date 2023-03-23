@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.head{
+
+.head {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -11,34 +12,41 @@
     background-color: lightyellow;
     height: 10vh;
 }
-.home{
+
+.home {
     display: flex;
 }
-.lefthome{
+
+.lefthome {
     width: 70%;
     height: 90vh;
     background-image: url("images/quiz.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
-.righthome{
+
+.righthome {
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: lightpink;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
 }
-.login input, .righthome input{
+
+.login input,
+.righthome input {
     height: 40px;
     width: 261px;
     margin: 2px;
     padding: 9px;
 }
-form button{
+
+form button {
     height: 38px;
     width: 123px;
     background-color: rosybrown;
@@ -49,23 +57,27 @@ form button{
     border: none;
     cursor: pointer;
 }
-.righthead ul{
+
+.righthead ul {
     display: flex;
 }
-.righthead ul li{
+
+.righthead ul li {
     margin: 20px;
-    list-style:none ;
+    list-style: none;
     cursor: pointer;
     font-size: 20px;
 }
-.login{
+
+.login {
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rebeccapurple;
 }
-.option{
+
+.option {
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -74,12 +86,13 @@ form button{
     background-color: aquamarine;
     position: relative;
 }
-.option ul{
+
+.option ul {
     margin-top: 20px;
     list-style: none;
 }
 
-.option ul label{
+.option ul label {
     display: inline-block;
     height: 40px;
     width: 350px;
@@ -91,7 +104,8 @@ form button{
     cursor: pointer;
     margin-left: 2px;
 }
-.option button{
+
+.option button {
     margin-top: 26px;
     height: 36px;
     width: 95px;
@@ -100,22 +114,89 @@ form button{
     border-radius: 20px;
     cursor: pointer;
 }
-.score{
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: linear-gradient(to bottom, #616161, #9bc5c3);
-}
-.option p{
+
+.option p {
     font-size: 60px;
     position: absolute;
     content: "";
     top: 5%;
     left: 90%;
 }
-.righthead ul li a{
+
+.righthead ul li a {
     text-decoration: none;
     color: darkblue`;
+}
+
+.score {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.wrongans {
+    margin-top: 20px;
+}
+
+.wrong {
+    background-color: #ffcccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.wrong p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.wrong ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.wrong li {
+    margin-bottom: 5px;
+}
+
+.wrong h3 {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.score {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.wrongans {
+    margin-top: 20px;
+}
+
+.wrong {
+    background-color: #ffcccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.wrong p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.wrong ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.wrong li {
+    margin-bottom: 5px;
+}
+
+.wrong h3 {
+    font-weight: bold;
+    margin-top: 5px;
+}
+.wrongans h1{
+    color: red;
 }

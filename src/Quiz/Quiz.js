@@ -10,8 +10,9 @@ export const quizcontext = createContext(null)
 
 function Quiz() {
     const [score, setscore] = useState(0)
+    const [wrong, setwrong] = useState([])
     return (
-        <quizcontext.Provider value={{score, setscore}}>
+        <quizcontext.Provider value={{score, setscore, wrong , setwrong }}>
         <BrowserRouter>
             <Header />
             <Routes>

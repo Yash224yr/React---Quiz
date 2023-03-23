@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { quizcontext } from './Quiz';
-import Score from './Score';
+
 
 function Option() {
   const [count, setcount] = useState(0)
@@ -9,6 +9,7 @@ function Option() {
   const { score, setscore } = useContext(quizcontext)
   const [timer, settimer] = useState(10)
   const navigate = useNavigate()
+  const {wrong , setwrong} = useContext(quizcontext)
 
   const questions = [
     {
@@ -116,15 +117,11 @@ function Option() {
     if (selectedOption === checkanswer) {
       setscore(score + 1)
     }
-    if (count < questions.length - 1) {
-      setcount(count + 1)
-    }else{
-      navigate("/Score")
+    else{
+      setwrong([...wrong, questions[count]])
     }
-    
     settimer(10)
   }
-
   if (count < questions.length) {
     return (
       <div className='option'>
@@ -148,7 +145,9 @@ function Option() {
             <label htmlFor='ans4' id="option4">{questions[count].d}</label>
           </li>
         </ul>
-        <button onClick={handlenext}>Submit</button>
+      
+      
+        <button onClick={()=>{setcount(count + 1);handlenext() }}>Submit</button>
       </div>
     )
   }
