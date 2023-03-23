@@ -7,9 +7,7 @@ function Option() {
   const [count, setcount] = useState(0)
   const [selectedOption, setselectedoption] = useState("")
   const { score, setscore } = useContext(quizcontext)
-  const [go, setgo] = useState(true)
   const [timer, settimer] = useState(10)
-  const [checked, setchecked] = useState(true);
   const navigate = useNavigate()
 
   const questions = [
@@ -97,7 +95,6 @@ function Option() {
 
   function handlechange(e) {
     setselectedoption(e.target.value)
-    setchecked(false)
   }
 
   useEffect(() => {
@@ -157,7 +154,7 @@ function Option() {
   }
   else {
     return (
-      <Score />
+     navigate("/Score")
     )
   }
 }
