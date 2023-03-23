@@ -20,11 +20,11 @@
 .lefthome {
     width: 70%;
     height: 90vh;
-    background-image: url("images/quiz.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-
+.lefthome img{
+    height: 100%;
+    width: 100%;
+}
 .righthome {
     width: 30%;
     display: flex;
@@ -199,4 +199,34 @@ form button {
 }
 .wrongans h1{
     color: red;
+}
+@media all and (max-width:943px){
+    .lefthome {
+        width: 50%;
+    }
+    .righthome{
+        width: 50%;
+    }
+}
+@media all and (max-width:593px){
+    .righthome{
+        width: 100%;
+        height: 45vh;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .lefthome{
+        width: 100%;
+        height: 45vh;
+
+    }
+}
+@media all and (max-width:416px){
+    .lefthead h1{
+        font-size: 18px;
+    }
+    .righthead ul li{
+        margin: 10px;
+    }
 }

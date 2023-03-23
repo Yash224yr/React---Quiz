@@ -37,6 +37,7 @@ function Home() {
         return (
             <div className='home'>
                 <div className='lefthome'>
+                    <img src="images/quiz.webp"></img>
                 </div>
                 <div className='righthome'>
                     <form onSubmit={handlesubmit}> 
