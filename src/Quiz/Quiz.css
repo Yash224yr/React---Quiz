@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: lightyellow;
+    height: 10vh;
+}
+.home{
+    display: flex;
+}
+.lefthome{
+    width: 70%;
+    height: 90vh;
+    background-image: url("images/quiz.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.righthome{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightpink;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.login input, .righthome input{
+    height: 40px;
+    width: 261px;
+    margin: 2px;
+    padding: 9px;
+}
+form button{
+    height: 38px;
+    width: 123px;
+    background-color: rosybrown;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    border: none;
+    cursor: pointer;
+}
+.righthead ul{
+    display: flex;
+}
+.righthead ul li{
+    margin: 20px;
+    list-style:none ;
+    cursor: pointer;
+    font-size: 20px;
+}
+.login{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+}
+.option{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    position: relative;
+}
+.option ul{
+    margin-top: 20px;
+    list-style: none;
+}
+
+.option ul label{
+    display: inline-block;
+    height: 40px;
+    width: 350px;
+    background-color: lightsalmon;
+    border-radius: 20px;
+    padding: 9px 50px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+.option button{
+    margin-top: 26px;
+    height: 36px;
+    width: 95px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.score{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #616161, #9bc5c3);
+}
+.option p{
+    font-size: 60px;
+    position: absolute;
+    content: "";
+    top: 5%;
+    left: 90%;
+}
+.righthead ul li a{
+    text-decoration: none;
+    color: darkblue;
+}
