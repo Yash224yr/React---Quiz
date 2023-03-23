@@ -208,6 +208,11 @@ form button {
         width: 50%;
     }
 }
+@media all and (max-width:800px){
+    .option p{
+        left: 50%;
+    }
+}
 @media all and (max-width:593px){
     .righthome{
         width: 100%;
@@ -222,11 +227,30 @@ form button {
 
     }
 }
+@media all and (max-width:520px){
+    .option h1{
+        text-align: center;
+    }
+    .option ul label{
+        height: 35px;
+        width: 300px;
+    }
+    .option p {
+        left: 45%;
+    }
+}
 @media all and (max-width:416px){
     .lefthead h1{
         font-size: 18px;
     }
     .righthead ul li{
         margin: 10px;
+    }
+}
+@media all and (max-width:380px){
+    .option ul label{
+        height: 30px;
+        width: 250px;
+        padding: 7px 95px;
     }
 }
